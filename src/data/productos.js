@@ -7,11 +7,11 @@ export const productosVenta = [
         url: '/productos/CastilloHinchable1' // <-- ¡AQUÍ se define la URL para este producto!
     },
     {
-        id: 'CastilloHinchable1',
-        nombre: 'Castillo hinchable flotante',
-        precio: '150€',
-        imagen: '/toldo1.jpg', // Ajusta esta ruta si tus imágenes están en /public/images/
-        url: '/productos/CastilloHinchable1' // <-- ¡AQUÍ se define la URL para este producto!
+        id: 'CastilloMario',
+        nombre: 'Castillo De Mario Bros',
+        precio: '170€',
+        imagen: '/CastilloMarioBros.jpg', // Ajusta esta ruta si tus imágenes están en /public/images/
+        url: '/productos/CastilloMario' // <-- ¡AQUÍ se define la URL para este producto!
     },
     {
         id: 'castillo2',
@@ -30,11 +30,11 @@ export const productosVenta = [
         video: '/torovideo.mp4'// <-- Y así sucesivamente
     },
     {
-        id: 'toroMecanico', // ID único
-        nombre: 'Toro Mecanico',
+        id: 'CastilloPepaPig', // ID único
+        nombre: 'Castillo Pepa Pig',
         precio: '892€',
-        imagen: '/toroMecanico.jpg',
-        url: '/productos/toroMecanico'
+        imagen: '/pepa-pig.jpg',
+        url: '/productos/CastilloPepaPig'
     },
 
 
@@ -51,7 +51,7 @@ export const productosAlquiler =[
     {
         id: 'Barredora', // ID único
         nombre: 'Barredora',
-        precio: '350€',
+        precio: '50€ el dia; consulte para mas ver',
         imagen: '/Barredeora5.jpg',
         url: '/productos/Barredora',
         video: '/torovideo.mp4'//// <-- Y así sucesivamente
