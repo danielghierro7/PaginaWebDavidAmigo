@@ -28,11 +28,11 @@ import Footer from "../../components/Footer.astro"; // Asegúrate de que esto ex
 <main class="flex-grow flex items-center justify-center p-6">
     <div class="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-2xl max-w-md w-full p-8 text-center">
         <h1 class="text-4xl font-bold text-gray-800 mb-4">{producto.nombre}</h1>
-        <img
-                src={producto.imagen}
-                alt={producto.nombre}
-                class="w-full h-auto rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-105"
-        />
+        <video controls class="max-w-full rounded-lg shadow-lg">
+            <source src="/torovideo.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+        </video>
+
         <p class="text-3xl font-semibold text-amber-500 mb-4">{producto.precio}</p>
         <p class="text-base text-gray-700 mb-6">
             ¡Compra ahora tu {producto.nombre.toLowerCase()} con la mejor calidad y al mejor precio!
