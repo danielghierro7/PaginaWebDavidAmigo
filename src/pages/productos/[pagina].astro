@@ -1,21 +1,47 @@
 ---
-import PaginaInicial from '../../components/paginaInicial.astro';
+import "../../styles/global.css"
+import { productos } from '../../data/productos.js';
+import "../../components/Footer.astro"
 
-const productos = [
-    { id: 'toldo1', nombre: 'Toldo Clásico', precio: '150€', imagen: '/Toldo.jpg' },
-    { id: 'toldo2', nombre: 'Toldo Premium', precio: '250€', imagen: '/Toldo.jpg' },
-    { id: 'toldo3', nombre: 'Toldo Deluxe', precio: '350€', imagen: '/Toldo.jpg' }
-];
-
-// Esta función se llama en el build para generar cada página estática
 export async function getStaticPaths() {
     return productos.map((producto) => ({
-        params: { pagina: producto.id },
-        props: { producto }
+    params: { pagina: producto.id },
+    props: { producto },
     }));
-}
+    }
 
 const { producto } = Astro.props;
+import "../../styles/global.css";
+import Footer from "../../components/Footer.astro"; // Asegúrate de que esto existe y tiene @tailwind
 ---
 
-<PaginaInicial {...producto} />
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{producto.nombre} | Toldos David Amigo</title>
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-teal-500 via-sky-400 to-blue-600 text-gray-900">
+<main class="flex-grow flex items-center justify-center p-6">
+    <div class="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-2xl max-w-md w-full p-8 text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">{producto.nombre}</h1>
+        <img
+                src={producto.imagen}
+                alt={producto.nombre}
+                class="w-full h-auto rounded-lg shadow-lg mb-6 transition-transform duration-300 transform hover:scale-105"
+        />
+        <p class="text-3xl font-semibold text-amber-500 mb-4">{producto.precio}</p>
+        <p class="text-base text-gray-700 mb-6">
+            ¡Compra ahora tu {producto.nombre.toLowerCase()} con la mejor calidad y al mejor precio!
+        </p>
+        <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-lg shadow-md transition">
+            Lo quiero
+        </button>
+
+    </div>
+
+
+</main>
+<Footer/>
+</body>
+</html>

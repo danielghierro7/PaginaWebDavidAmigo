@@ -1,20 +1,7 @@
+// src/data/productos.js
 export const productos = [
-    {
-        id: 1,
-        nombre: 'Toldo Clásico',
-        precio: 120,
-        imagen: '/img/toldo-clasico.jpg',
-    },
-    {
-        id: 2,
-        nombre: 'Toldo Retráctil',
-        precio: 180,
-        imagen: '/img/toldo-retractil.jpg',
-    },
-    {
-        id: 3,
-        nombre: 'Toldo Vertical',
-        precio: 150,
-        imagen: '/img/toldo-vertical.jpg',
-    },
+    { id: 'toldo1', nombre: 'Castillo hinchable flotante', precio: '150€', imagen: '/toldo1.jpg' },
+    { id: 'toldo2', nombre: 'Toldo Premium', precio: '250€', imagen: '/toldo2.jpg' },
+    { id: 'toldo3', nombre: 'Toldo Deluxe', precio: '350€', imagen: '/Toldo.jpg' },
+    { id: 'toldo3', nombre: 'Toldo PremireeQualite', precio: '892€', imagen: '/Toldo.jpg' }
 ];

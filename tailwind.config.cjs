@@ -1,9 +1,9 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{astro,html,js,ts,jsx,tsx}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+export default {
+  content: [
+    './src/**/*.{astro,html,js,jsx,ts,tsx}', // Asegúrate de que incluye .astro
+    // ...otras rutas relevantes
+  ],
+  // ...
 }
-
