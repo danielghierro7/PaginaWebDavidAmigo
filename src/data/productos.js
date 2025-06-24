@@ -26,7 +26,7 @@ export const productosVenta = [
         nombre: 'Barredora',
         precio: '350€',
         imagen: '/Barredeora5.jpg',
-
+       url:'/productos/Barredora',
         video: '/torovideo.mp4'// <-- Y así sucesivamente
     },
     {
