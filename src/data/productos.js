@@ -7,6 +7,13 @@ export const productosVenta = [
         url: '/productos/CastilloHinchable1' // <-- ¡AQUÍ se define la URL para este producto!
     },
     {
+        id: 'CastilloHinchable1',
+        nombre: 'Castillo hinchable flotante',
+        precio: '150€',
+        imagen: '/toldo1.jpg', // Ajusta esta ruta si tus imágenes están en /public/images/
+        url: '/productos/CastilloHinchable1' // <-- ¡AQUÍ se define la URL para este producto!
+    },
+    {
         id: 'castillo2',
         nombre: 'Toldo Premium',
         precio: '250€',
@@ -47,13 +54,7 @@ export const productosAlquiler =[
         url: '/productos/Barredora' // <-- Y así sucesivamente
     },
 
-    {
-        id: 'rafaela', // ID único
-        nombre: 'Rafa Lanzacucarachas',
-        precio: 'Gratis, no lo quiero',
-        imagen: '/rafa.jpg',
-        url: '/productos/rafaela' // <-- Y así sucesivamente
-    }
+
 
 
 
