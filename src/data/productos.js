@@ -32,7 +32,7 @@ export const productosVenta = [
     {
         id: 'CastilloPepaPig', // ID único
         nombre: 'Castillo Pepa Pig',
-        precio: '892€',
+        precio: '200€',
         imagen: '/pepa-pig.jpg',
         url: '/productos/CastilloPepaPig'
     },
