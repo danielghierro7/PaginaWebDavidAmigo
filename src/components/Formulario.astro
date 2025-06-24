@@ -1,0 +1,49 @@
+<section class="max-w-3xl mx-auto mt-16 mb-12 p-8 bg-white bg-opacity-20 rounded-lg shadow-lg text-center">
+    <h3 class="text-3xl font-bold text-gray-400 mb-6">Contáctanos</h3>
+    <form
+            action="https://formspree.io/f/xgvynqnj"
+            method="POST"
+            class="space-y-6 text-left"
+    >
+        <label class="block">
+            <span class="text-white font-semibold">Nombre</span>
+            <input
+                    type="text"
+                    name="name"
+                    required
+                    class="mt-1 block w-full rounded-md bg-white bg-opacity-70 text-gray-900 p-2"
+                    placeholder="Tu nombre"
+            />
+        </label>
+
+        <label class="block">
+            <span class="text-white font-semibold">Correo electrónico</span>
+            <input
+                    type="email"
+                    name="email"
+                    required
+                    class="mt-1 block w-full rounded-md bg-white bg-opacity-70 text-gray-900 p-2"
+                    placeholder="ejemplo@correo.com"
+            />
+        </label>
+
+        <label class="block">
+            <span class="text-white font-semibold">Mensaje</span>
+            <textarea
+                    name="message"
+                    rows="4"
+                    required
+                    class="mt-1 block w-full rounded-md bg-white bg-opacity-70 text-gray-900 p-2"
+                    placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+        </label>
+
+        <button
+                type="submit"
+                class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md transition duration-300"
+        >
+            Enviar
+        </button>
+    </form>
+</section>
+

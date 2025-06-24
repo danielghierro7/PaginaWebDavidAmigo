@@ -3,9 +3,8 @@ import '../styles/global.css'; // Tu CSS global con Tailwind
 import { productosAlquiler } from '../data/productos.js'; // Tus datos de productos
 import ProductoCard from '../components/ProductoCard.astro'; // <--- Importa tu nuevo componente
 import Footer from '../components/Footer.astro'; // Si ya tienes tu componente Footer
-import Paginacion from "../components/Paginacion.astro"
-// Si esta es una página de listado, podrías no necesitar getStaticPaths aquí.
-// Si es una plantilla de detalle de producto, el bucle iría en la página de listado.
+import Paginacion from "../components/Paginacion.astro";
+import Formulario from "../components/Formulario.astro";
 ---
 
 <html lang="es">
@@ -54,6 +53,8 @@ import Paginacion from "../components/Paginacion.astro"
         <img src="/WhatsApp.svg.webp" alt="WhatsApp" class="inline-block w-6 h-6 ml-2" />
     </a>
 </section>
+    <Formulario/>
+
 
 <Footer />
 </body>
