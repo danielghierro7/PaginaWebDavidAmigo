@@ -1,0 +1,59 @@
+---
+import '../styles/global.css'; // Tu CSS global con Tailwind
+import { productosAlquiler } from '../data/productos.js'; // Tus datos de productos
+import ProductoCard from '../components/ProductoCard.astro'; // <--- Importa tu nuevo componente
+import Footer from '../components/Footer.astro'; // Si ya tienes tu componente Footer
+import Paginacion from "../components/Paginacion.astro"
+// Si esta es una página de listado, podrías no necesitar getStaticPaths aquí.
+// Si es una plantilla de detalle de producto, el bucle iría en la página de listado.
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alquiler | Pequevivo</title>
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-teal-500 via-sky-400 to-blue-600 text-gray-900">
+<main class="flex-grow p-6">
+
+    <header class="max-w-6xl mx-auto mb-6 text-center">
+        <h1 class="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 drop-shadow-xl tracking-wide select-none">
+            Pequevivo
+        </h1>
+        <p class="mt-1 text-2xl text-white/90 font-semibold">Expertos en animación</p>
+    </header>
+
+    <Paginacion class="text-5xl font-extrabold text-white text-center mb-10 drop-shadow-lg"></Paginacion>
+
+    <h2 class="text-5xl font-extrabold text-white text-center mb-10 drop-shadow-lg">Nuestros Productos en Alquiler</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        {productosAlquiler.map(producto => (
+                <ProductoCard
+                        nombre={producto.nombre}
+                        precio={producto.precio}
+                        imagen={producto.imagen}
+                        url={producto.url}
+                />
+        ))}
+    </div>
+</main>
+<section class="w-full max-w-7xl mx-auto mt-16 mb-12 p-10 bg-white bg-opacity-20 rounded-2xl shadow-2xl text-center">
+    <h3 class="text-4xl font-bold text-gray-400 mb-4 drop-shadow-md select-none">
+        ¿Quieres saber más? ¡Contáctanos!
+    </h3>
+    <a
+            href="https://wa.me/34600362444"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition duration-300"
+    >
+        Enviar WhatsApp
+        <img src="/WhatsApp.svg.webp" alt="WhatsApp" class="inline-block w-6 h-6 ml-2" />
+    </a>
+</section>
+
+<Footer />
+</body>
+</html>

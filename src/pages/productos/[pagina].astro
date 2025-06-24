@@ -1,14 +1,17 @@
 ---
 import "../../styles/global.css"
-import { productos } from '../../data/productos.js';
+import { productosTotales } from '../../data/productos.js';
 import "../../components/Footer.astro"
 
 export async function getStaticPaths() {
-    return productos.map((producto) => ({
+    return productosTotales.map((producto) => ({
     params: { pagina: producto.id },
     props: { producto },
-    }));
+    }))
+        ;
     }
+
+
 
 const { producto } = Astro.props;
 import "../../styles/global.css";
