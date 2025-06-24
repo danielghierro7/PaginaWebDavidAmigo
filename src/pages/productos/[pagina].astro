@@ -2,11 +2,12 @@
 import PaginaInicial from '../../components/PaginaInicial.astro';
 
 const productos = [
-    { id: 'toldo1', nombre: 'Toldo Clásico', precio: '150€', imagen: '../../../../public/toldo.jpg' },
-    { id: 'toldo2', nombre: 'Toldo Premium', precio: '250€', imagen: '../../../../public/toldo.jpg' },
-    { id: 'toldo3', nombre: 'Toldo Deluxe', precio: '350€', imagen: '../../../../public/toldo.jpg' }
+    { id: 'toldo1', nombre: 'Toldo Clásico', precio: '150€', imagen: '/toldo.jpg' },
+    { id: 'toldo2', nombre: 'Toldo Premium', precio: '250€', imagen: '/toldo.jpg' },
+    { id: 'toldo3', nombre: 'Toldo Deluxe', precio: '350€', imagen: '/toldo.jpg' }
 ];
 
+// Esta función se llama en el build para generar cada página estática
 export async function getStaticPaths() {
     return productos.map((producto) => ({
         params: { pagina: producto.id },
