@@ -53,7 +53,8 @@ export const productosAlquiler =[
         nombre: 'Barredora',
         precio: '350€',
         imagen: '/Barredeora5.jpg',
-        url: '/productos/Barredora' // <-- Y así sucesivamente
+        url: '/productos/Barredora',
+        video: '/torovideo.mp4'//// <-- Y así sucesivamente
     },
 
 
