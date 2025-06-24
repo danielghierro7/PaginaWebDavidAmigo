@@ -18,14 +18,15 @@ export const productosVenta = [
         nombre: 'CastilloAcuaticoPremium',
         precio: '250€',
         imagen: '/toldo2.jpg',
-        url: '/productos/castillo2' // <-- ¡Y AQUÍ para este!
+        url: '/productos/castillo2', // <-- ¡Y AQUÍ para este!
+        video: '/torovideo.mp4'
     },
     {
         id: 'Barredora', // ID único
         nombre: 'Barredora',
         precio: '350€',
         imagen: '/Barredeora5.jpg',
-        url: '/productos/Barredora',
+
         video: '/torovideo.mp4'// <-- Y así sucesivamente
     },
     {
