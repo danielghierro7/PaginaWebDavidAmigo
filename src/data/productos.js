@@ -15,7 +15,7 @@ export const productosVenta = [
     },
     {
         id: 'castillo2',
-        nombre: 'Toldo Premium',
+        nombre: 'CastilloAcuaticoPremium',
         precio: '250€',
         imagen: '/toldo2.jpg',
         url: '/productos/castillo2' // <-- ¡Y AQUÍ para este!
