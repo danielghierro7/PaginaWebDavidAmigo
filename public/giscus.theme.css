@@ -1,0 +1,8 @@
+:root {
+    --color-bg-primary: #ffffff;
+    --color-text-primary: #000000;
+    --color-border-primary: #e5e7eb;
+    --color-btn-bg: #0d1117; /* Color del botón GitHub */
+    --color-btn-text: #ffffff;
+    --color-btn-hover-bg: #24292f;
+}

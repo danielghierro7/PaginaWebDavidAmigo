@@ -1,0 +1,24 @@
+---
+import AuthGuard from '../components/AuthGuard.jsx';
+import ProductoForm from '../components/ProductoForm.jsx';
+import AdminProductoMedia from '../components/AdminProductoMedia.jsx';
+import DeleteProductoForm from '../components/DeleteProductosForm.jsx';
+import '../styles/global.css';
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Productos</title>
+</head>
+<body>
+<h1>Admin - Gestión de Productos</h1>
+
+<AuthGuard client:load>
+    <ProductoForm client:load />
+    <p>PREFERIBLEMENTE SI TIENES QUE MODIFICAR LAS FOTOS O VIDEO DE UN PRODUCTO MODIFICALOS ABAJO DEL TODO</p>
+    <DeleteProductoForm client:load />
+    <AdminProductoMedia client:load />
+</AuthGuard>
+</body>
+</html>
